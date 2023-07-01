@@ -1,14 +1,10 @@
 package security.sample;
 
-import jakarta.transaction.Transactional;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.stereotype.Component;
 
-import security.sample.models.LoginDTO;
-
-
-@org.springframework.stereotype.Service
-@Transactional
+@Component
 public class Service {
 
 	private final AuthenticationManager authManager;

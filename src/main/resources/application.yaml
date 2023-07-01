@@ -1,31 +1,3 @@
-spring:
-
-  datasource:
-    password: ${DATABASE_PASSWORD}
-    url: ${DATABASE_URL}
-    username: ${DATABASE_USERNAME}
-
-  jpa:
-    properties:
-
-      hibernate:
-        format_sql: true
-        jdbc:
-          time_zone: UTC
-
-      jakarta:
-        persistence:
-          sharedCache:
-            mode: UNSPECIFIED
-
-    open-in-view: false
-    show-sql: true
-    hibernate:
-      ddl-auto: create
-
-  config:
-    import: optional:file:local.env[.properties]
-
 logging:
   level:
     org.springframework.security: TRACE

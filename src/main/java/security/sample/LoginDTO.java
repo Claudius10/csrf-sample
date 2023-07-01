@@ -1,4 +1,4 @@
-package security.sample.models;
+package security.sample;
 
 public class LoginDTO {
 
